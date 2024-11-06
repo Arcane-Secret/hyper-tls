@@ -17,13 +17,13 @@ vendored = ["native-tls/vendored"]
 [dependencies]
 bytes = "1"
 http-body-util = "0.1.0"
-hyper = "1"
-hyper-util = { version = "0.1.0", features = ["client-legacy", "tokio"] }
+hyper.git = "https://github.com/Arcane-Secret/hyper.git"
+hyper-util = { git = "https://github.com/Arcane-Secret/hyper-util.git", features = ["client-legacy", "tokio"] }
 native-tls = "0.2.1"
 tokio = "1"
 tokio-native-tls = "0.3"
 tower-service = "0.3"
 
 [dev-dependencies]
-hyper-util = { version = "0.1.0", features = ["http1"] }
+hyper-util = { git = "https://github.com/Arcane-Secret/hyper-util.git", features = ["http1"] }
 tokio = { version = "1.0.0", features = ["io-std", "macros", "io-util"] }
